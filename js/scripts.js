@@ -58,7 +58,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-let url = "https://docs.google.com/forms/d/e/1FAIpQLSfmTINjVDjWp4cbiNnYDOEbJHeSz3uHz5Rr7wOR0428UZZVnw/formResponse"; //action url
+let url = "https://docs.google.com/forms/u/2/d/e/1FAIpQLScHwJxMsfQ84ZSgiIfL-wTIoB2LjT5skWn8zLZnH0Kt6iBQRg/formResponse"; //action url
 let form = document.querySelector("#form"); //form element
 
 form.addEventListener("submit", (e) => {
@@ -84,17 +84,14 @@ function getInputData() {
   let dataToPost = new FormData(); //formdata API
 
   //fill name attributes to corresponding values
-  dataToPost.append("entry.1368813240", document.querySelector("#lastname").value);
-  dataToPost.append("entry.1391295615", document.querySelector("#firstname").value);
-  dataToPost.append("entry.1848296828", document.querySelector("#email").value);
-  dataToPost.append("entry.1761747136", document.querySelector("#inputAddress").value);
-  dataToPost.append("entry.593898036", document.querySelector("#inputAddress2").value);
-  dataToPost.append("entry.341827945", document.querySelector("#inputCity").value);
-  dataToPost.append("entry.1413999866", document.querySelector("#inputZip").value);
-  dataToPost.append("entry.867917125", document.querySelector("#inputCountry").value);
-  dataToPost.append("entry.1433709179", document.querySelector("#inputInterest").value);
-  dataToPost.append("entry.59073892", document.querySelector("#inputAdults").value);
-  dataToPost.append("entry.1158705370", document.querySelector("#inputChildren").value);
+  dataToPost.append("entry.1482118939", document.querySelector("#lastname").value);
+  dataToPost.append("entry.1035138484", document.querySelector("#firstname").value);
+  dataToPost.append("entry.902654349", document.querySelector("#email").value);
+  dataToPost.append("entry.1536226527", document.querySelector("#inputInterest").value);
+  dataToPost.append("entry.1968511952", document.querySelector("#inputAdults").value);
+  dataToPost.append("entry.1229427373", document.querySelector("#inputChildren").value);
+  dataToPost.append("entry.1580569942", document.querySelector("#inputDietary").value);
+  dataToPost.append("entry.934207906", document.querySelector("#inputBus").value);
 
   return dataToPost;
 }
